@@ -7,7 +7,7 @@
 */
 @font-face {font-family: "Brock Script";
     src: url("Brock-Script.eot"); /* IE9*/
-    src: url("Brock-Script_iefix.eot") format("embedded-opentype"), /* IE6-IE8 */
+    src: url("Brock-Script.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("Brock-Script.woff2") format("woff2"), /* chrome firefox */
     url("Brock-Script.woff") format("woff"), /* chrome firefox */
     url("Brock-Script.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
