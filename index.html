@@ -84,8 +84,8 @@
                                 
                                 <!-- Sub -->
                                 <ul class="mn-sub" >
-                                    <li><a href="#" id="cityvr_menu_btn">The City VR Experience</a></li>
                                     <li><a href="#" id="skywand_menu_btn">Skywand</a></li>
+                                    <li><a href="#" id="cityvr_menu_btn">The City VR Experience</a></li>
                                     <li><a href="#" id="airgraphy_menu_btn">Airgraphy</a></li>
                                 </ul>
                                 <!-- End Sub -->
@@ -108,7 +108,48 @@
             <!-- Fullwidth Slider -->
             <div class="home-section fullwidth-slider bg-dark" id="home">
                                 
+               
+                
                 <!-- Slide Item -->
+                <section class="home-section bg-scroll bg-dark-alfa-30 bg-pattern-over" data-background="video/skywand.jpg" id="skywand">
+                    <div class="js-height-full container  ">
+                        
+                        <div class="bg-video-wrapper" id="video-background-skywand">
+                            <div class="bg-video-overlay bg-pattern-over"></div>
+                        </div>
+
+                        <!-- Hero Content -->
+                        <div class="home-content">
+                            <div class="home-text">
+                                
+                                <h1 class="hs-line-14 font-alt mb-50 mb-xs-30">
+                                    Skywand
+                                </h1>
+
+                                <h2 class="hs-line-4 no-transp font-alt mb-50 mb-xs-30">
+                                    IMMERSIVE MOTION CONTROL FOR AERIAL CINEMATOGRAPHY
+                                </h2>                       
+                                
+                                <div>
+                                <a href="https://vimeo.com/163223379" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
+                                </div>
+
+                                <h1>
+                                </h1>
+                                <div>
+                                    <a href="https://skywand.com" target="_blank" class="btn btn-mod btn-w btn-medium btn-round">Visit skywand.com</a>
+                                    <span class="hidden-xs">&nbsp;</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- End Hero Content -->
+                        
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                 <!-- Slide Item -->
                 <section class="home-section bg-scroll bg-dark-alfa-30 bg-pattern-over" data-background="video/cityvr.jpg" id="cityvr">
                     <div class="js-height-full container">
 
@@ -149,45 +190,6 @@
                         </div>
                         <!-- End Hero Content -->
 
-                    </div>
-                </section>
-                <!-- End Slide Item -->
-                
-                <!-- Slide Item -->
-                <section class="home-section bg-scroll bg-dark-alfa-30 bg-pattern-over" data-background="video/skywand.jpg" id="skywand">
-                    <div class="js-height-full container  ">
-                        
-                        <div class="bg-video-wrapper" id="video-background-skywand">
-                            <div class="bg-video-overlay bg-pattern-over"></div>
-                        </div>
-
-                        <!-- Hero Content -->
-                        <div class="home-content">
-                            <div class="home-text">
-                                
-                                <h1 class="hs-line-14 font-alt mb-50 mb-xs-30">
-                                    Skywand
-                                </h1>
-
-                                <h2 class="hs-line-4 no-transp font-alt mb-50 mb-xs-30">
-                                    IMMERSIVE MOTION CONTROL FOR AERIAL CINEMATOGRAPHY
-                                </h2>                       
-                                
-                                <div>
-                                <a href="https://vimeo.com/163223379" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
-                                </div>
-
-                                <h1>
-                                </h1>
-                                <div>
-                                    <a href="https://skywand.com" target="_blank" class="btn btn-mod btn-w btn-medium btn-round">Visit skywand.com</a>
-                                    <span class="hidden-xs">&nbsp;</span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <!-- End Hero Content -->
-                        
                     </div>
                 </section>
                 <!-- End Slide Item -->
@@ -465,22 +467,22 @@
                         "autoplay": true,
                         "loop": true
                     });
-                    var videobackground_skywand = new $.backgroundVideo($('#video-background-skywand'), {
-                        "align": "centerXY",
-                        "width": 1920,
-                        "height": 1080,
-                        "path": "video/",
-                        "filename": "skywand",
-                        "types": ["webm", "mp4"],
-                        "autoplay": true,
-                        "loop": true
-                    });
                     var videobackground_cityvr = new $.backgroundVideo($('#video-background-cityvr'), {
                         "align": "centerXY",
                         "width": 1920,
                         "height": 1080,
                         "path": "video/",
                         "filename": "cityvr",
+                        "types": ["webm", "mp4"],
+                        "autoplay": true,
+                        "loop": true
+                    });
+                    var videobackground_skywand = new $.backgroundVideo($('#video-background-skywand'), {
+                        "align": "centerXY",
+                        "width": 1920,
+                        "height": 1080,
+                        "path": "video/",
+                        "filename": "skywand",
                         "types": ["webm", "mp4"],
                         "autoplay": true,
                         "loop": true
