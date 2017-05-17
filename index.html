@@ -67,7 +67,7 @@
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
                         <a href="#home" class="logo" style="padding-left:10px;">
-                            <img src="images/logo-white.png" alt="">
+                            <img width="150px" src="images/logo-white.png" alt="">
                         </a>
                     </div>
                     <div class="mobile-nav">
@@ -87,6 +87,7 @@
                                     <li><a href="#" id="skywand_menu_btn">Skywand</a></li>
                                     <li><a href="#" id="cityvr_menu_btn">The City VR Experience</a></li>
                                     <li><a href="#" id="airgraphy_menu_btn">Airgraphy</a></li>
+                                    <li><a href="#" id="holokit_menu_btn">HoloKit</a></li>
                                 </ul>
                                 <!-- End Sub -->
                                 
@@ -237,6 +238,47 @@
                 </section>
                 <!-- End Slide Item --> 
 
+                <!-- Slide Item -->
+                <section class="home-section bg-scroll bg-dark-alfa-30 bg-pattern-over" data-background="video/holokit.jpg" id="holokit">
+                    <div class="js-height-full container">
+
+                        <div class="bg-video-wrapper" id="video-background-holokit">
+                            <div class="bg-video-overlay bg-pattern-over "></div>
+                        </div>
+
+                        <!-- Hero Content -->
+                        <div class="home-content">
+                            <div class="home-text">
+                                
+                                <h1 class="mb-50 mb-xs-30">
+                                    <img width="200px" src="images/holokit.png"></img>
+                                    <br>
+                                    <br>
+                                       <br>
+                                          <br>
+                                </h1>
+
+                                <!-- 
+                                <div>
+                                <a href="" class="big-icon-link lightbox mfp-iframe"><span class="big-icon"><i class="fa fa-play"></i></span></a>
+                                </div> -->
+
+                                <h1>
+                                </h1>
+                                 <div>
+                                    <a href="https://github.com/holokit" target="_blank" class="btn btn-mod btn-w btn-medium btn-round hidden-xs">Available on Github <i class="fa fa-github fa-lg dark"></i></a>
+                                    <span class="hidden-xs">&nbsp;</span>
+                                    <a href="https://holokit.io" target="_blank" class="btn btn-mod btn-w btn-medium btn-round">Visit holokit.io</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- End Hero Content -->
+                        
+                    </div>
+                </section>
+                <!-- End Slide Item --> 
+
             </div>
             <!-- End Fullwidth Slider -->
                
@@ -288,7 +330,7 @@
                      <div class="section-text col-md-8 col-md-offset-2 ">
                         <div class="row mb-50 mb-sm-20">
                             <div>
-                            We are looking for partnership with innovators, filmmakers, artists, and creatives to collaborate on creative projects that use the Skywand technologies. 
+                            We are looking for partnership with innovators, filmmakers, artists, and creatives to collaborate on creative Robotics + Art projects that use the Skywand technologies. 
                             </div>
 
                         </div>
@@ -342,6 +384,22 @@
                                     </div>
                                 </div>
                                 <!-- End Email -->
+
+                                <!-- Email -->
+                                <div class="col-sm-4 pt-20 pb-20 pb-xs-0">
+                                    <div class="contact-item">
+                                        <div class="ci-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="ci-title font-alt">
+                                            For HoloKit
+                                        </div>
+                                        <div class="ci-text">
+                                            <a href="mailto:info@holokit.io">info@holokit.io</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Email -->
                             </div>
                     </div>
                     
@@ -369,7 +427,7 @@
                         
                         <!-- Copyright -->
                         <div class="footer-copy font-alt">
-                            <a href="https://ambergarage.com" target="_blank">&copy; Amber Garage. 2016</a>.
+                            <a href="https://ambergarage.com" target="_blank">&copy; Amber Garage. 2017</a>.
                         </div>
                         <!-- End Copyright -->
                         
@@ -455,8 +513,23 @@
                     var owl = $("#home").data("owlCarousel");
                     owl.goTo(2);
                 });
+                $("#holokit_menu_btn").click(function (e) {
+                    var owl = $("#home").data("owlCarousel");
+                    owl.goTo(3);
+                });
 
                 if (!($("html").hasClass("mobile"))){
+                     var videobackground_holokit = new $.backgroundVideo($('#video-background-holokit'), {
+                        "align": "centerXY",
+                        "width": 1920,
+                        "height": 1080,
+                        "path": "video/",
+                        "filename": "holokit",
+                        "types": ["mp4"],
+                        "autoplay": true,
+                        "loop": true
+                    });
+
                     var videobackground_airgraphy = new $.backgroundVideo($('#video-background-airgraphy'), {
                         "align": "centerXY",
                         "width": 1920,
