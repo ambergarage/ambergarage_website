@@ -26,26 +26,26 @@ projects:
     title: City of Sparkles
     subtitle: An Interactive Virtual Reality Experiment for Storytelling based on Twitter Real-time Data
     url: cityofsparkles.art
-    bgvideo_ytid: https://youtu.be/OKU9gdLisc4
+    bgvideo_ytid: OKU9gdLisc4
     trailer_url: https://vimeo.com/285663088
   - id: holokit
     type: tech
     title: HoloKit
     subtitle:
     url: holokit.io
-    bgvideo_ytid: https://youtu.be/-wAXphBPj04
+    bgvideo_ytid: -wAXphBPj04
     trailer_url: https://vimeo.com/220422433
   - id: cityvr
     type: art
     title: The City VR Experience
     subtitle: Walk like a giant alongside skyscrapers
     url: cityvr.com
-    bgvideo_ytid: https://youtu.be/z1ey7ZEN8k4
+    bgvideo_ytid: z1ey7ZEN8k4
     trailer_url: https://vimeo.com/184466672
   - id: skywand
     type: tech
     title: Skywand
     subtitle: IMMERSIVE MOTION CONTROL FOR AERIAL CINEMATOGRAPHY
     url: skywand.com
-    bgvideo_ytid: https://youtu.be/4Z1huFzF5bY
+    bgvideo_ytid: 4Z1huFzF5bY
     trailer_url: https://vimeo.com/163223379
