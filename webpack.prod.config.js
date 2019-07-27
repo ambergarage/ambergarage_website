@@ -17,16 +17,15 @@ module.exports = merge(baseConfig, {
                     output: {
                         comments: false
                     },
-                    compress: false
+                    compress: true
                 }
-            }),
-            new OptimizeCssAssetsPlugin({
-                cssProcessorOptions: {
-                    discardDuplicates: { removeAll: true },
-                    discardComments: {removeAll: true }
-                },
-                canPrint: true
             })
+            // new OptimizeCssAssetsPlugin({
+            //     cssProcessorOptions: {
+            //         preset: ['default', { discardComments: { removeAll: true } }],
+            //     },
+            //     canPrint: false
+            // })
         ],
     },
     plugins: [
@@ -36,11 +35,11 @@ module.exports = merge(baseConfig, {
             jpegtran: null,
             plugins: [
                 imageminMozjpeg({
-                    quality: 60,
+                    quality: 90,
                     progressive: true
                 }),
                 imageminPngquant({
-                    quality: 95
+                    quality: [0.90, 0.95]
                 })
             ]
         })
