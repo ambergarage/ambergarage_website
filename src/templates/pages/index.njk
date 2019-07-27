@@ -13,7 +13,11 @@
 
 <h1 class="hs-line-8 hs-shadow font-alt mb-50 mb-xs-30 {{ project.id }}-subtitle">
     {{ project.subtitle }}
+    <br>
+    <br>
+    <img width="30%" src="images/laurels.png"></img>
 </h1>
+
 {% elif project.id == "holokit" %}
   <h1 class="mb-50 mb-xs-30">
       <img width="200px" src="images/holokit.png"></img>
@@ -31,7 +35,7 @@
     Redefine the way we experience 3D maps
 </div>
 
-<h1 class="hs-line-16 hs-shadow font-alt mb-50 mb-xs-30 {{ project.id }}-title">
+<h1 class="hs-line-15 hs-shadow font-alt mb-50 mb-xs-30 {{ project.id }}-title">
     {{ project.title }}
 </h1>
 
@@ -57,7 +61,7 @@
         <div class="js-height-full container">
 
             <!-- Video BG Init -->
-            <div class="player" data-property="{videoURL:'{{ project.bgvideo_ytid }}', containment:'#{{ project.id }}', stopMovieOnBlur: false, useOnMobile: true, quality: 'highres', loop:true, autoPlay:true, showControls:false, showYTLogo: false, mute:true, startAt:0, opacity:1, mobileFallbackImage: 'images/{{ project.id }}-video-placeholder.jpg'}">
+            <div class="player" data-property="{videoURL:'{{ project.bgvideo_ytid }}', containment:'#{{ project.id }}', stopMovieOnBlur: false, useOnMobile: true, quality: 'hd1080', loop:true, autoPlay:true, addRaster: false, mask: false, showAnnotations: false, showControls:false, mute:true, cc_load_policy: false, showYTLogo: false, playOnlyIfVisible: true, startAt:0, opacity:1, optimizeDisplay:true, gaTrack: true, mobileFallbackImage: 'images/{{ project.id }}-video-placeholder.jpg'}">
             </div>
              <!-- End Video BG Init -->
 

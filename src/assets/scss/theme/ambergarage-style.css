@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.hs-shadow {
+    text-shadow: 2px 2px 8px rgba(33,33,33,0.8);
+}
+
+.hs-line-special{
+    margin-top: 0;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 30px;
+    color: #fff;
+}
+
+
+.mfp-iframe-holder .mfp-content {
+    max-width: 1080px;
+}
+
+.mfp-bg {
+    opacity: 1;
+}
