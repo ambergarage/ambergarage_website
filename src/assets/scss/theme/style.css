@@ -2750,9 +2750,6 @@ a.logo:hover{
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0); 
 }
-.image-fullwidth img{
-    width: 100%;
-}
 
 /* Breadcrumbs */
 

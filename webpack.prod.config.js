@@ -19,13 +19,14 @@ module.exports = merge(baseConfig, {
                     },
                     compress: true
                 }
+            }),
+            new OptimizeCssAssetsPlugin({
+                cssProcessorOptions: {
+                    discardDuplicates: { removeAll: true },
+                    discardComments: {removeAll: true }
+                },
+                canPrint: true
             })
-            // new OptimizeCssAssetsPlugin({
-            //     cssProcessorOptions: {
-            //         preset: ['default', { discardComments: { removeAll: true } }],
-            //     },
-            //     canPrint: false
-            // })
         ],
     },
     plugins: [
