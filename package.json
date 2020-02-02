@@ -1,5 +1,5 @@
 {
-  "name": "ambergarage-boilerplate",
+  "name": "ambergarage_website",
   "version": "1.0.0",
   "description": "Base para maquetar un nuevo proyecto web con Nunjucks, SCSS, JS (ES6) usando webpack.",
   "main": "README.md",
@@ -25,13 +25,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ambergarage/ambergarage-boilerplate.git"
+    "url": "git+https://github.com/ambergarage/ambergarage_website.git"
   },
-  "bugs": {
-    "url": "https://github.com/ambergarage/ambergarage-boilerplate/issues"
-  },
-  "homepage": "https://github.com/ambergarage/ambergarage-boilerplate",
-  "author": "Javier Puche",
+  "homepage": "https://github.com/ambergarage/ambergarage_website",
+  "author": "Botao Hu",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.5.5",
